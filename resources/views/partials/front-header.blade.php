@@ -6,7 +6,7 @@
                 Menyusui di Indonesia</h1>
             <p class="hero-description">Temukan konselor menyusui terpercaya di dekat Anda untuk mendukung perjalanan
                 mengASIhi sang buah hati.</p>
-            <a href="{{ route('filament.front.pages.counselor') }}" class="search-button">
+            <a href="{{ route('filament.front.pages.terapis') }}" class="search-button">
                 Cari Konselor
             </a>
         </div>

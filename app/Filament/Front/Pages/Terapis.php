@@ -5,9 +5,9 @@ namespace App\Filament\Front\Pages;
 use App\Filament\Front\Widgets\FrontCounselorTable;
 use Filament\Pages\Page;
 
-class Counselor extends Page
+class Terapis extends Page
 {
-    protected string $view = 'filament.front.pages.counselor';
+    protected string $view = 'filament.front.pages.terapis';
 
     protected static ?int $navigationSort = 3;
 
