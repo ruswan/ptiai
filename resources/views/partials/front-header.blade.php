@@ -2,12 +2,10 @@
     <div class="hero-content">
         <!-- Teks Hero -->
         <div class="hero-text">
-            <h1 class="hero-title">Bersama Meningkatkan Dukungan
-                Menyusui di Indonesia</h1>
-            <p class="hero-description">Temukan konselor menyusui terpercaya di dekat Anda untuk mendukung perjalanan
-                mengASIhi sang buah hati.</p>
+            <h1 class="hero-title">Untuk Ibu Sehat, Anak Hebat, Indonesia Kuat.</h1>
+            <p class="hero-description">Temukan terapis ibu dan anak terpercaya di dekat Anda.</p>
             <a href="{{ route('filament.front.pages.terapis') }}" class="search-button">
-                Cari Konselor
+                Cari Terapis
             </a>
         </div>
         <!-- Gambar Hero -->
