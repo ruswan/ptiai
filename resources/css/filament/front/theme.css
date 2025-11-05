@@ -267,6 +267,9 @@
     @apply list-decimal list-inside mb-5 text-gray-700;
 }
 
+.content-section li{
+    @apply mb-2;
+}
 
 /* Article Section Start */
 .article-section{
