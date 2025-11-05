@@ -22,7 +22,7 @@ class StatsOverview extends StatsOverviewWidget
     protected function getStats(): array
     {
         return [
-            Stat::make(__('Counselors'), Counselor::count())
+            Stat::make(__('Terapis'), Counselor::count())
                 ->icon('heroicon-o-users')
                 ->color('success')
                 ->url(CounselorResource::getUrl('index')),

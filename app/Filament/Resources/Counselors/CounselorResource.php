@@ -26,6 +26,8 @@ class CounselorResource extends Resource
 
     protected static ?string $recordTitleAttribute = 'registration_number';
 
+    protected static ?string $modelLabel = 'Terapis';
+
     public static function getNavigationGroup(): ?string
     {
         return __('Account Management');

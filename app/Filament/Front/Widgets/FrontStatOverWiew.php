@@ -16,11 +16,11 @@ class FrontStatOverWiew extends StatsOverviewWidget
     {
         return [
             Stat::make('', Counselor::count())
-                ->description(__('Counselors')),
+                ->description(__('Terapis')),
             Stat::make('', Province::whereHas('counselors')->count())
-                ->description(__('Province')),
+                ->description(__('Provinsi')),
             Stat::make('', Regency::whereHas('counselors')->count())
-                ->description(__('Regency')),
+                ->description(__('Kota/Kabupaten')),
         ];
     }
 }
