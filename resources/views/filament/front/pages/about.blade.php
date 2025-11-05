@@ -5,7 +5,7 @@
         </x-slot>
 
         <div class="content-section">
-            <p>Komunitas Konselor Menyusui Indonesia (KKMI) adalah organisasi profesional yang
+            <p>Persatuan Terapis Ibu dan Anak Indonesia (KKMI) adalah organisasi profesional yang
                 mewadahi para konselor menyusui dari berbagai lintas profesi kesehatan di Indonesia. KKMI
                 hadir sebagai sarana kolaborasi, pengembangan kapasitas, serta advokasi dalam
                 meningkatkan kualitas layanan konseling menyusui di masyarakat.</p>
@@ -13,7 +13,7 @@
             <p>Dengan jaringan anggota yang tersebar di berbagai provinsi, KKMI berkomitmen untuk:</p>
 
             <ol>
-                <li>Menyediakan direktori konselor menyusui yang terpercaya dan mudah diakses
+                <li>Menyediakan Direktori Terapis menyusui yang terpercaya dan mudah diakses
                     oleh masyarakat.</li>
                 <li>Meningkatkan kompetensi anggota melalui pelatihan, workshop, dan kegiatan
                     ilmiah berbasis bukti.</li>

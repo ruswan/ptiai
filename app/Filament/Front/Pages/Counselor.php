@@ -11,7 +11,7 @@ class Counselor extends Page
 
     protected static ?int $navigationSort = 3;
 
-    protected static ?string $navigationLabel = 'Direktori Konselor';
+    protected static ?string $navigationLabel = 'Direktori Terapis';
 
     protected function getHeaderWidgets(): array
     {

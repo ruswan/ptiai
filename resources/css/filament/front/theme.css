@@ -7,25 +7,25 @@
 
 /* Brand Colors */
 :root {
-    --brand-teal: #4A7C7A;
-    --brand-teal-dark: #3a6260;
-    --brand-peach: #FBEAE8;
+    --brand-purple: #9d649b;
+    --brand-purple-dark: #5b256f;
+    --brand-peach: #F3EEF7;
 }
 
 .bg-brand-peach {
     background-color: var(--brand-peach);
 }
 
-.bg-brand-teal {
-    background-color: var(--brand-teal);
+.bg-brand-purple {
+    background-color: var(--brand-purple);
 }
 
-.bg-brand-teal-dark {
-    background-color: var(--brand-teal-dark);
+.bg-brand-purple-dark {
+    background-color: var(--brand-purple-dark);
 }
 
-.text-brand-teal {
-    color: var(--brand-teal);
+.text-brand-purple {
+    color: var(--brand-purple);
 }
 
 .fi-main-ctn{
@@ -84,7 +84,7 @@
 
 /* Start hero */
 .hero-banner{
-   background-color: #fbeae8;
+   background-color: #f3eef7;
    width: 100%;
 }
 
@@ -120,7 +120,7 @@
 .hero-title{
     font-size: 2.25rem;
     font-weight: bold;
-    color: #0f766e; /* teal-700 */
+    color: #734076; 
     line-height: 1.25;
     margin-bottom: 1.5rem;
     padding-top: 30px; /* Padding top untuk mobile */
@@ -133,13 +133,13 @@
 }
 
 .hero-description{
-    color: #4b5563; /* gray-600 */
+    color: #4b5563; 
     margin-bottom: 2rem;
 }
 
 .search-button{
     display: inline-block;
-    background-color: #0d9488; /* teal-600 */
+    background-color: #9d649b; 
     color: white;
     font-weight: 600;
     padding: 0.75rem 2rem;
@@ -150,7 +150,7 @@
 }
 
 .search-button:hover {
-    background-color: #0f766e; /* teal-700 */
+    background-color: #9d649b; 
     transform: translateY(-0.25rem);
 }
 
@@ -167,12 +167,12 @@
 }
 
 .fi-topbar-item{
-    color: #4b5563; /* gray-600 */
+    color: #4b5563; 
     transition: color 0.3s ease;
 }
 
 .fi-topbar-item:hover {
-    color: #0d9488; /* teal-600 */
+    color: #9d649b; 
 }
 
 .fi-topbar-item-label{
@@ -201,7 +201,7 @@
     font-weight: 700;
     font-size: 3rem;
     line-height: 2.25rem;
-    color: teal;
+    color: #9d649b;
 }
 
 .fi-wi-stats-overview-stat-description{
@@ -210,7 +210,7 @@
     line-height: 1.75rem;
     margin-top: 0.5rem;  
     display: block;
-    color: #4A7C7A;
+    color: #9d649b;
 }
 
 .fi-ta-ctn{
@@ -218,13 +218,13 @@
 }
 
 .fi-ta-record{
-@apply bg-white p-6 rounded-lg shadow-md border-t-4 border-teal-600 hover:shadow-xl transition-shadow duration-300;
+@apply bg-white p-6 rounded-lg shadow-md border-r-4 border-purple-300 hover:shadow-xl transition-shadow duration-300;
 }
 
 /* Jumbotron Start */
 .jumbotron {
     @apply py-20;
-    background-color: #fbeae8;
+    background-color: #f3eef7;
 }
 
 .jumbotroncontainer {
@@ -232,7 +232,8 @@
 }
 
 .jumbotron h2 {
-    @apply text-4xl font-bold text-center text-teal-700;
+    @apply text-4xl font-bold text-center ;
+    color: #734076;
 }
 
 /* Content Start */
@@ -242,7 +243,7 @@
 }
 
 .header-section{
-    @apply text-teal-600;
+    color: #9d649b
 }
 
 .content-section{
@@ -357,7 +358,7 @@
 
 .event-date-month{
     @apply font-bold text-sm;
-    color: var(--brand-teal);
+    color: var(--brand-purple);
 }
 
 .event-date-day{
@@ -386,11 +387,11 @@
 
 .event-button{
     @apply w-full text-center block text-white font-semibold py-2 px-4 rounded-lg transition duration-300;
-    background-color: var(--brand-teal);
+    background-color:#9d649b;
 }
 
 .event-button:hover{
-    background-color: var(--brand-teal-dark);
+    background-color: var(--brand-purple-dark);
 }
 /* Event Section End */
 

@@ -8,7 +8,6 @@ use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Panel;
 use Filament\PanelProvider;
-use Filament\Support\Colors\Color;
 use Filament\View\PanelsRenderHook;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
@@ -26,9 +25,9 @@ class FrontPanelProvider extends PanelProvider
             ->path('/')
             ->topNavigation()
             ->colors([
-                'primary' => Color::Teal,
+                'primary' => '#6e2d91',
             ])
-            ->brandLogo('/images/logo-kkmi.png')
+            ->brandLogo('/images/logo-ptiai.png')
             ->brandLogoHeight('50px')
             ->darkMode(false)
             ->spa()
@@ -61,8 +60,8 @@ class FrontPanelProvider extends PanelProvider
                 PanelsRenderHook::TOPBAR_AFTER,
                 function () {
                     return match (true) {
-                        request()->is('about') => view('partials.jumbotron', ['title' => 'Tentang KKMI']),
-                        request()->is('counselor') => view('partials.jumbotron', ['title' => 'Direktori Konselor']),
+                        request()->is('about') => view('partials.jumbotron', ['title' => 'Tentang PTIAI']),
+                        request()->is('counselor') => view('partials.jumbotron', ['title' => 'Direktori Terapis']),
                         request()->is('article') => view('partials.jumbotron', ['title' => 'Artikel']),
                         request()->is('article/*') => (function () {
                             $record = request()->route('slug');

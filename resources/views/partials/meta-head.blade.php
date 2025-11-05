@@ -1,15 +1,15 @@
 @php
-    $image = asset('images/kkmi.png');
+    $image = asset('images/ptiai.png');
 
     if (request()->is('/')) {
-        $title = 'Selamat Datang di KKMI';
-        $description = 'Komunitas konselor menyusui Indonesia';
+        $title = 'Selamat Datang di PTIAI';
+        $description = 'Persatuan Terapis Ibu dan Anak Indonesia';
     } elseif (request()->is('counselor')) {
-        $title = 'Direktori Konselor';
-        $description = 'Temukan konselor menyusui terbaik di Indonesia';
+        $title = 'Direktori Terapis';
+        $description = 'Temukan terapis Ibu dan Anak terbaik di Indonesia';
     } elseif (request()->is('article')) {
         $title = 'Artikel';
-        $description = 'Baca artikel menarik seputar menyusui';
+        $description = 'Baca artikel menarik seputar kesehatan ibu dan anak';
     } elseif (request()->is('article/*')) {
         $record = request()->route('slug');
         $record = \App\Models\Article::where('slug', $record)->first();
@@ -18,7 +18,7 @@
         $image =
             $record && $record->thumbnail
                 ? route('public.thumbnail', ['article' => $record])
-                : asset('images/kkmi.png');
+                : asset('images/ptiai.png');
     } elseif (request()->is('event')) {
         $title = 'Event';
         $description = 'Ikuti event menarik seputar menyusui';
@@ -28,10 +28,10 @@
         $title = $record ? $record->name : 'Detail Event';
         $description = $record ? Str::limit(strip_tags($record->description), 150) : 'Detail Event';
         $image =
-            $record && $record->thumbnail ? route('public.thumbnail', ['event' => $record]) : asset('images/kkmi.png');
+            $record && $record->thumbnail ? route('public.thumbnail', ['event' => $record]) : asset('images/ptiai.png');
     } elseif (request()->is('gallery')) {
         $title = 'Galeri';
-        $description = 'Lihat koleksi gambar menarik seputar Komunitas Konselor Menyusui Indonesia';
+        $description = 'Lihat koleksi gambar menarik seputar Persatuan Terapis Ibu dan Anak Indonesia';
     } elseif (request()->is('galeri/*')) {
         $record = request()->route('slug');
         $record = \App\Models\Gallery::where('slug', $record)->first();
@@ -40,23 +40,23 @@
         $image =
             $record && $record->thumbnail
                 ? route('public.thumbnail', ['gallery' => $record])
-                : asset('images/kkmi.png');
+                : asset('images/ptiai.png');
     } else {
-        $title = 'Komunitas Konselor Menyusui Indonesia';
+        $title = 'Persatuan Terapis Ibu dan Anak Indonesia';
         $description = 'Bersama Meningkatkan Dukungan Menyusui di Indonesia';
     }
 @endphp
 
 
-<meta name="description" content="{{ $description ?? 'Komunitas konselor menyusui Indonesia' }}">
+<meta name="description" content="{{ $description ?? 'Persatuan Terapis Ibu dan Anak Indonesia' }}">
 
-<meta property="og:title" content="{{ $title ?? 'Komunitas Konselor Menyusui Indonesia' }}">
+<meta property="og:title" content="{{ $title ?? 'Persatuan Terapis Ibu dan Anak Indonesia' }}">
 <meta property="og:description" content="{{ $description ?? 'Bersama Meningkatkan Dukungan Menyusui di Indonesia' }}">
-<meta property="og:image" content="{{ $image ?? asset('images/kkmi.png') }}">
+<meta property="og:image" content="{{ $image ?? asset('images/ptiai.png') }}">
 <meta property="og:url" content="{{ url()->current() }}">
 <meta property="og:type" content="website">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ $title ?? 'Komunitas Konselor Menyusui Indonesia' }}">
+<meta name="twitter:title" content="{{ $title ?? 'Persatuan Terapis Ibu dan Anak Indonesia' }}">
 <meta name="twitter:description" content="{{ $description ?? 'Bersama Meningkatkan Dukungan Menyusui di Indonesia' }}">
-<meta name="twitter:image" content="{{ $image ?? asset('images/kkmi.png') }}">
+<meta name="twitter:image" content="{{ $image ?? asset('images/ptiai.png') }}">

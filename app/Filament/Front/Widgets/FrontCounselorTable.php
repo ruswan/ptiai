@@ -97,6 +97,6 @@ class FrontCounselorTable extends TableWidget
             ], FiltersLayout::AboveContent)
             ->filtersFormColumns(2)
             ->deferFilters(false)
-            ->paginated([10, 25]);
+            ->paginated([9, 18, 27]);
     }
 }

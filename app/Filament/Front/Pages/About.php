@@ -10,5 +10,5 @@ class About extends Page
 
     protected static ?int $navigationSort = 2;
 
-    protected static ?string $navigationLabel = 'Tentang KKMI';
+    protected static ?string $navigationLabel = 'Tentang PTIAI';
 }
