@@ -63,6 +63,7 @@ class Counselor extends Model
         'province_id',
         'regency_id',
         'status_id',
+        'validation_status',
         'whatsapp_number',
         'contact_email',
         'profile_photo',
@@ -144,7 +145,7 @@ class Counselor extends Model
      */
     public function getFullLocationAttribute()
     {
-        return $this->city.', '.$this->province;
+        return $this->city . ', ' . $this->province;
     }
 
     /**
