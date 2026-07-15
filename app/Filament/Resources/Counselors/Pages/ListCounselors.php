@@ -93,6 +93,7 @@ class ListCounselors extends ListRecords
                         'tiktok_link' => 'https://www.tiktok.com/@johndoe',
                         'facebook_link' => 'https://www.facebook.com/johndoe',
                     ],
+                    fileName: 'sample-terapis.xlsx',
                 ),
             CreateAction::make(),
         ];
