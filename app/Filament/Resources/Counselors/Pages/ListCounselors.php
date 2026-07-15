@@ -29,6 +29,12 @@ class ListCounselors extends ListRecords
                     'tiktok_link' => ['nullable', 'url'],
                     'facebook_link' => ['nullable', 'url'],
                 ])
+                ->beforeImport(function ($data, $livewire, $excelImportAction) {
+                    $excelImportAction->additionalData([
+                        'validation_status' => 'pending',
+                        'status_id' => 1,
+                    ]);
+                })
                 ->mutateAfterValidationUsing(function (array $data): array {
                     $email = strtolower(trim((string) $data['contact_email']));
 
@@ -73,12 +79,6 @@ class ListCounselors extends ListRecords
                     }
 
                     return $collection;
-                })
-                ->beforeImport(function ($data, $livewire, $excelImportAction) {
-                    $excelImportAction->customImportData([
-                        'validation_status' => 'pending',
-                        'status_id' => 1,
-                    ]);
                 })
                 ->sampleExcel(
                     sampleData: [
